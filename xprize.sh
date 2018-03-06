@@ -1,4 +1,28 @@
 #!/bin/sh
+
+if [ $# -eq 0 ];
+then
+    echo "Installing Assets..."
+    echo "Installing Audio Assets..."
+    adb push assets/RTAsset_Audio_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
+    
+    echo "Installing Story Assets..." >&2
+    adb push assets/RTAsset_Stories_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
+fi
+
+
+## Any tag (specifially -a) prevents assets from being called
+while getopts ":a" opt; do
+    case $opt in
+        a)
+            echo "Not installing Assets" >&2
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2
+            ;;
+    esac
+done
+
 ## install needed APKs
 #adb install apk/RoboPolicy.xprize.apk
 echo 'Installing RTHomeScreen...'
