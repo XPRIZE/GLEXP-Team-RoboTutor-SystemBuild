@@ -2,12 +2,14 @@
 
 if [ $# -eq 0 ];
 then
-    echo "Installing Assets..."
-    echo "Installing Audio Assets..."
-    adb push assets/RTAsset_Audio_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
+    echo "Pushing Assets..."
+    echo "Pushing Audio Assets..."
+    #adb push assets/RTAsset_Audio_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
+    adb push assets/RTAsset_Audio_SW_Set1.1.1.0.zip /sdcard/Download
     
-    echo "Installing Story Assets..." >&2
-    adb push assets/RTAsset_Stories_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
+    echo "Pushing Story Assets..." >&2
+    #adb push assets/RTAsset_Stories_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
+    adb push assets/RTAsset_Stories_SW_Set1.1.1.0.zip /sdcard/Download
 fi
 
 
@@ -32,7 +34,8 @@ echo 'Installing FaceLogin...'
 adb install apk/facelogin.en.1.6.0.apk
 
 echo 'Installing RoboTutor...'
-adb install apk/robotutor.release_dbg.1.5.6.0.apk
+#adb install apk/robotutor.release_dbg.1.5.6.0.apk
+adb install apk/robotutor.release_dbg.1.5.6.1.apk
 
 ## Set the device owner
 echo 'Setting Device Owner...'
