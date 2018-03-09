@@ -1,5 +1,8 @@
 ## XPrize System Build
 
+### Setting up adb on Windows
+Follow steps [here](https://www.xda-developers.com/install-adb-windows-macos-linux/)
+
 ### Steps to install:
 
 1. Start from a fresh install of Android 7.1.1
