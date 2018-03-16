@@ -56,6 +56,10 @@ echo 'Setting app permissions...'
 adb shell am start -n cmu.xprize.rthomescreen/.SetAppPermissions
 sleep 2
 
+echo 'Configuring to connect to XPRIZE Wifi'
+adb shell am broadcast -n cmu.xprize.rthomescreen/.ConfigureWifi 
+sleep 2
+
 ## Start FTP Service... we need to do this before we start the "lockTask" activity!
 ## See here https://stackoverflow.com/questions/19769716/how-to-send-string-intent-extra-value-from-command-line
 echo 'Starting Transfer Service'
