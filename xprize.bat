@@ -26,7 +26,8 @@ adb install apk\robotutor.release_dbg.1.5.6.1.apk
 echo 'Setting Device Owner...'
 :: adb shell dpm set-device-owner cmu.xprize.dpc/.AdminReceiver
 adb shell dpm set-device-owner cmu.xprize.rthomescreen/.AdminReceiver
-sleep 2
+
+ping -n 3 127.0.0.1>nul
 
 :::: Start the Activity
 echo 'Starting Activity...'

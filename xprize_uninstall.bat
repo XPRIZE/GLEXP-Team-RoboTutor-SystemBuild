@@ -10,7 +10,8 @@ adb uninstall com.example.iris.login1
 :: adb shell am start -n cmu.xprize.dpc/cmu.xprize.dpc.RemoveAdmin
 echo 'Removing Device Owner privileges...'
 adb shell am start -n cmu.xprize.rthomescreen/cmu.xprize.rthomescreen.RemoveAdmin
-sleep 2
+
+ping -n 3 127.0.0.1>nul
 
 :: uninstall package
 :: adb uninstall cmu.xprize.dpc
