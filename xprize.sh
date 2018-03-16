@@ -57,8 +57,10 @@ adb shell am start -n cmu.xprize.rthomescreen/.SetAppPermissions
 sleep 2
 
 ## Start FTP Service... we need to do this before we start the "lockTask" activity!
+## See here https://stackoverflow.com/questions/19769716/how-to-send-string-intent-extra-value-from-command-line
 echo 'Starting Transfer Service'
-adb shell am start -n cmu.xprize.service_ftp/.RoboTransfer --es FTP_ADDRESS 128.237.135.9  --es FTP_USER anonymous  --ei FTP_PORT 2121 --esa FTP_READ_DIRS RoboTutor --esa FTP_WRITE_DIRS remote
+### Replace... so everything boots from RTHomeScreen
+#adb shell am start -n cmu.xprize.service_ftp/.RoboTransfer --es FTP_ADDRESS 128.237.135.9  --es FTP_USER anonymous  --ei FTP_PORT 2121 --esa FTP_READ_DIRS RoboTutor --esa FTP_WRITE_DIRS remote
 sleep 2
 
 ## Start the Activity
