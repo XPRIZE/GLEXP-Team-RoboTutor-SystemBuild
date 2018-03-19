@@ -37,3 +37,8 @@ Follow steps [here](https://www.xda-developers.com/install-adb-windows-macos-lin
 
 #### Backdoor
 1. When on the RTHomeScreen, tap in the upper left corner 16 times. This will release kiosk mode (more backdoor functionality to come).
+
+
+
+### Build Process
+![build process](XPrizeSystemBuild/build_process.png)
