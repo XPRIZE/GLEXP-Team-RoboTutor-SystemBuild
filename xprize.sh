@@ -12,9 +12,12 @@ then
     adb push assets/RTAsset_Stories_SW_Set1.1.1.0.zip /sdcard/Download
 
 
-    #### TODO
     ### create folder for demo_vids
-    ### adb push asssets/demo_vids
+    ### adb push demo_vids
+    ## https://stackoverflow.com/questions/13373489/adb-shell-command-mkdir-for-creating-a-directory
+    echo "Pushing demo videos..."
+    adb push robotutor_assets  /sdcard/ 
+    
 fi
 
 
@@ -39,7 +42,8 @@ adb install apk/facelogin.sw.1.6.0.apk
 
 echo 'Installing RoboTutor...'
 ## THIS MUST BE x.x.x.1 FOR XPRIZE!!!!!
-# for quicker testing... adb install apk/robotutor.release_dbg.1.5.6.0.apk
+#for quicker testing...
+#adb install apk/robotutor.release_dbg.1.5.6.1.apk
 adb install apk/robotutor.release_sw.1.5.6.0.apk
 
 echo 'Installing RoboTransfer...'
@@ -60,12 +64,6 @@ echo 'Configuring to connect to XPRIZE Wifi'
 adb shell am broadcast -n cmu.xprize.rthomescreen/.ConfigureWifi 
 sleep 2
 
-## Start FTP Service... we need to do this before we start the "lockTask" activity!
-## See here https://stackoverflow.com/questions/19769716/how-to-send-string-intent-extra-value-from-command-line
-echo 'Starting Transfer Service'
-### Replace... so everything boots from RTHomeScreen
-#adb shell am start -n cmu.xprize.service_ftp/.RoboTransfer --es FTP_ADDRESS 128.237.135.9  --es FTP_USER anonymous  --ei FTP_PORT 2121 --esa FTP_READ_DIRS RoboTutor --esa FTP_WRITE_DIRS remote
-sleep 2
 
 ## Start the Activity
 echo 'Starting Activity...'
