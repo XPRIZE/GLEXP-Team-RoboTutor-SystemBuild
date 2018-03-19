@@ -41,4 +41,4 @@ Follow steps [here](https://www.xda-developers.com/install-adb-windows-macos-lin
 
 
 ### Build Process
-![build process](XPrizeSystemBuild/build_process.png)
+![build process](https://raw.githubusercontent.com/RoboTutorLLC/XPrizeSystemBuild/master/build_process.png?token=AEWYrzgPHSUFjuW5BanxWn2JR-bsPzSOks5auUnIwA%3D%3D)
