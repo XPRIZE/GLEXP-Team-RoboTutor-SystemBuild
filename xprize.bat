@@ -19,11 +19,11 @@ echo "Installing RTHomeScreen..."
 adb install apk\RoboLaunch.release.1.0.0.apk
 
 echo "Installing FaceLogin..."
-adb install apk\facelogin.en.1.6.0.apk
+adb install apk\facelogin.sw.1.6.0.apk
 
 echo "Installing RoboTutor..."
 :: adb install apk\robotutor.release_dbg.1.5.6.0.apk
-adb install apk\robotutor.release_dbg.1.5.6.1.apk
+adb install apk\robotutor.release_sw.1.5.7.1.apk
 
 echo "Installing RoboTransfer..."
 adb install apk\RoboTransfer-xprize.apk

@@ -1,10 +1,12 @@
 echo off
 
-:: Uninstall RoboTutor and FaceLogin
+:: Uninstall RoboTutor and FaceLogin (and RoboTransfer)
 echo 'Uninstalling RoboTutor...'
 adb uninstall cmu.xprize.robotutor
 echo 'Uninstalling FaceLogin...'
 adb uninstall com.example.iris.login1
+echo 'Uninstalling RoboTransfer...'
+adb uninstall cmu.xprize.service_ftp
 
 :: Run the backdoor service that removes device-owner privileges
 :: adb shell am start -n cmu.xprize.dpc/cmu.xprize.dpc.RemoveAdmin

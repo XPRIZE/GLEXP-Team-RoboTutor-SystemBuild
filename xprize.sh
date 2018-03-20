@@ -43,8 +43,8 @@ adb install apk/facelogin.sw.1.6.0.apk
 echo 'Installing RoboTutor...'
 ## THIS MUST BE x.x.x.1 FOR XPRIZE!!!!!
 #for quicker testing...
-#adb install apk/robotutor.release_dbg.1.5.6.1.apk
-adb install apk/robotutor.release_sw.1.5.6.0.apk
+## adb install apk/robotutor.release_dbg.1.5.6.1.apk
+adb install apk/robotutor.release_sw.1.5.7.0.apk
 
 echo 'Installing RoboTransfer...'
 adb install apk/RoboTransfer-xprize.apk
@@ -57,7 +57,7 @@ sleep 2
 
 ## Give our apps special permissions
 echo 'Setting app permissions...'
-adb shell am start -n cmu.xprize.rthomescreen/.SetAppPermissions
+adb shell am broadcast -n cmu.xprize.rthomescreen/.SetAppPermissions
 sleep 2
 
 echo 'Configuring to connect to XPRIZE Wifi'
