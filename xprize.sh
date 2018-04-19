@@ -7,9 +7,9 @@ then
     # for testing... adb push assets/RTAsset_Audio_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
     adb push assets/RTAsset_Audio_SW_Set1.1.1.0.zip /sdcard/Download
     
-    echo "Pushing Story Assets..." >&2
+    echo "Pushing More Assets..." >&2
     # for testing... adb push assets/RTAsset_Stories_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
-    adb push assets/RTAsset_Stories_SW_Set1.1.1.0.zip /sdcard/Download
+    adb push assets/CodeDrop1_Master.1.1.0.zip /sdcard/Download
 
 
     ### create folder for demo_vids
@@ -35,16 +35,17 @@ done
 
 ## install needed APKs
 echo 'Installing RTHomeScreen...'
-adb install apk/RoboLaunch.release.1.0.0.apk
+adb install apk/RoboLaunch.xprize.1.0.0.apk
 
-echo 'Installing FaceLogin...'
-adb install apk/facelogin.sw.1.6.0.apk
+# R.I.P. FaceLogin
+# echo 'Installing FaceLogin...'
+# adb install apk/facelogin.sw.1.6.0.apk
 
 echo 'Installing RoboTutor...'
 ## THIS MUST BE x.x.x.1 FOR XPRIZE!!!!!
 #for quicker testing...
-## adb install apk/robotutor.release_dbg.1.5.6.1.apk
-adb install apk/robotutor.release_sw.1.5.7.0.apk
+## adb install apk/robotutor.release_dbg.1.8.6.1.apk
+adb install apk/robotutor.release_sw.1.8.6.1.apk
 
 echo 'Installing RoboTransfer...'
 adb install apk/RoboTransfer-xprize.apk

@@ -4,8 +4,8 @@
 echo 'Uninstalling RoboTutor...'
 adb uninstall cmu.xprize.robotutor
 
-echo 'Uninstalling FaceLogin...'
-adb uninstall com.example.iris.login1
+# echo 'Uninstalling FaceLogin...'
+# adb uninstall com.example.iris.login1
 
 echo 'Uninstalling RoboTransfer...'
 adb uninstall cmu.xprize.service_ftp
