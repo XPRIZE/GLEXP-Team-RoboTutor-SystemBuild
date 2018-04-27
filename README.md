@@ -7,9 +7,10 @@ Follow steps [here](https://www.xda-developers.com/install-adb-windows-macos-lin
 
 1. Start from a fresh install of Android 7.1.1
 2. Enable Developer Options, USB Debugging, Install from unknown sources, etc etc
-3. Connect to Android via USB
+3. Connect to Android via USB. Allow your RSA to access.
 4. You must not have any accounts, Google or otherwise on your device. [How to remove accounts](https://support.google.com/nexus/answer/2840815?hl=en).
 5. Run `xprize.bat` (or `xprize.sh` on Mac/Linux). Note that this will put your device into kiosk mode, so that no other system services can be accessed.
+6. Wait until the script 
 
 ### Instructions for Testing
 0. After installation, you should not be able to pull down the top menu, press the home button, or press the recent button. 

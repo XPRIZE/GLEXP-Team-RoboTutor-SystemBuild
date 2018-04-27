@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $# -eq 0 ];
+if [ $# -eq 0 ]; # might want to remove this...
 then
     echo "Pushing Assets..."
     echo "Pushing Audio Assets..."
@@ -19,6 +19,7 @@ then
     adb push robotutor_assets  /sdcard/ 
     
 fi
+
 
 
 ## Any tag (specifially -a) prevents assets from being called
@@ -45,7 +46,7 @@ echo 'Installing RoboTutor...'
 ## THIS MUST BE x.x.x.1 FOR XPRIZE!!!!!
 #for quicker testing...
 ## adb install apk/robotutor.release_dbg.1.8.6.1.apk
-adb install apk/robotutor.release_sw.1.8.6.1.apk
+adb install apk/robotutor.release_sw.1.8.8.1.apk
 
 echo 'Installing RoboTransfer...'
 adb install apk/RoboTransfer-xprize.apk
@@ -70,3 +71,6 @@ sleep 2
 echo 'Starting Activity...'
 # for testing... adb shell am start -n cmu.xprize.dpc/.LaunchActivity
 adb shell am start -n cmu.xprize.rthomescreen/.HomeActivity
+
+
+echo 'DONE!!! Please tap on the tablet screen and wait for the yellow bars to complete.'
