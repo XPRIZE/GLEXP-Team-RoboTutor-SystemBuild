@@ -1,38 +1,30 @@
 #!/bin/sh
 
-if [ $# -eq 0 ]; # might want to remove this...
-then
-    echo "Pushing Assets..."
-    echo "Pushing Audio Assets..."
-    # for testing... adb push assets/RTAsset_Audio_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
-    adb push assets/RTAsset_Audio_SW_Set1.1.1.0.zip /sdcard/Download
-    
-    echo "Pushing More Assets..." >&2
-    # for testing... adb push assets/RTAsset_Stories_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
-    adb push assets/CodeDrop1_Master.1.1.0.zip /sdcard/Download
+echo "Pushing Assets..."
+echo "Pushing Audio Assets..."
+# for testing... adb push assets/RTAsset_Audio_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
+adb push assets/RTAsset_Audio_SW_Set1.1.1.0.zip /sdcard/Download
 
 
-    ### create folder for demo_vids
-    ### adb push demo_vids
-    ## https://stackoverflow.com/questions/13373489/adb-shell-command-mkdir-for-creating-a-directory
-    echo "Pushing demo videos..."
-    adb push robotutor_assets  /sdcard/ 
-    
-fi
+# for testing... adb push assets/RTAsset_Stories_SW_Set1.1.1.0/assets /sdcard/robotutor_assets
+echo "Pushing LitAudio..." >&2
+adb push assets/CodeDrop1_LitAudio.1.1.0.zip /sdcard/Download
+echo "Pushing LitStories..." >&2
+adb push assets/CodeDrop1_LitStories.1.1.0.zip /sdcard/Download
+echo "Pushing NumberStories..." >&2
+adb push assets/CodeDrop1_NumberStories.1.1.0.zip /sdcard/Download
+echo "Pushing ReadingStories..." >&2
+adb push assets/CodeDrop1_ReadingStories.1.1.0.zip /sdcard/Download
+echo "Pushing Songs..." >&2
+adb push assets/CodeDrop1_Songs.1.1.0.zip /sdcard/Download    
+
+### create folder for demo_vids
+### adb push demo_vids
+## https://stackoverflow.com/questions/13373489/adb-shell-command-mkdir-for-creating-a-directory
+echo "Pushing demo videos..."
+adb push robotutor_assets  /sdcard/ 
 
 
-
-## Any tag (specifially -a) prevents assets from being called
-while getopts ":a" opt; do
-    case $opt in
-        a)
-            echo "Not installing Assets" >&2
-            ;;
-        \?)
-            echo "Invalid option: -$OPTARG" >&2
-            ;;
-    esac
-done
 
 ## install needed APKs
 echo 'Installing RTHomeScreen...'
@@ -46,7 +38,7 @@ echo 'Installing RoboTutor...'
 ## THIS MUST BE x.x.x.1 FOR XPRIZE!!!!!
 #for quicker testing...
 ## adb install apk/robotutor.release_dbg.1.8.6.1.apk
-adb install apk/robotutor.release_sw.1.8.8.1.apk
+adb install apk/robotutor.release_sw.1.8.9.1.apk
 
 echo 'Installing RoboTransfer...'
 adb install apk/RoboTransfer-xprize.apk

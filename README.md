@@ -5,14 +5,16 @@
 
 ### Preparing Installation
 
-(see diagram below)
 
-1. Follow instructions to generate APKs for [RoboTutor](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RoboTutor), [RoboLauncher](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RoboLauncher), and [RoboTransfer](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RoboTransfer) and copy the APKs into the [apk](apk) folder.
-2. Follow instructions to generate ZIP files for assets ([here](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-CodeDrop1-Assets) and [here](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RTAsset_Publisher)) and copy the zip folders into the [assets](assets) folder.
-3. After you have the proper APKs and ZIP folders, continue below.
-
-![pre-build process](img/pre_build_process.png)
-
+1. Go to the [RoboTutor](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RoboTutor) repository and go to the **Building RoboTutor** section. Follow steps 1-7 to generate the APK [robotutor.release_sw.1.8.8.1.apk](apk/robotutor.release_sw.1.8.8.1.apk), and then copy it into the [apk](apk) folder.
+2. Go to the [RoboLauncher](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RoboLauncher) repository and go to the **Steps for generating APK** section. Follow steps 1-5 to generate the APK [RoboLaunch.xprize.1.0.0.apk](apk/RoboLaunch.xprize.1.0.0.apk) and then copy it into the [apk](apk) folder.
+3. Go to the [RoboTransfer](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RoboTransfer) repository and go to the **Building Home_Screen** section. Follow steps 1-5 to generate the APK []and copy the APKs into the .
+4. Go to the [CodeDrop1_Assets](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-CodeDrop1-Assets) repostiory and go to the **XPrize Pre-Installation process** section. Follow steps 1-4 to generate the following zip files. Transfer these files to the [assets](assets) folder.
+	* CodeDrop1_LitAudio.1.1.0.zip	* CodeDrop1_LitStories.1.1.0.zip	* CodeDrop1_NumberStories.1.1.0.zip	* CodeDrop1_ReadingStories.1.1.0.zip	* CodeDrop1_Songs.1.1.0.zip
+5. Go to the [RTAsset_Publisher](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RTAsset_Publisher) repository and go to the **XPrize Pre-Installation Process** section. Follow steps 1-4 to generate the "RTAsset_Audio_SW_Set1.1.1.0.zip" file. Transfer this file into the [assets](assets) folder.
+6. After the listed APKs and assets have been added, your [apk](apk) and [assets](assets) directories should look like this:
+![expected directory contents](img/expected_dirs.png)
+7. Once these files are present, continue below to push assets and install APKs.
 
 
 ### Setting up adb on Windows
@@ -59,7 +61,12 @@ Follow steps [here](https://www.xda-developers.com/install-adb-windows-macos-lin
 
 
 
+
 ### Build Process
+
+![pre-build process](img/pre_build_process.png)
+
+
 ![build process](img/build_process.png)
 
 ## **Usage**
