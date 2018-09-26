@@ -52,7 +52,7 @@ ping -n 3 127.0.0.1>nul
 
 :::: Give our apps special permissions
 echo "Setting app permissions..."
-adb shell am start -n cmu.xprize.rthomescreen/.SetAppPermissions
+adb shell am broadcast -n cmu.xprize.rthomescreen/.SetAppPermissions
 ping -n 3 127.0.0.1>nul
 
 :::: Configure WiFi
