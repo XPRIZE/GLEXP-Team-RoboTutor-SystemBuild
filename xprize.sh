@@ -50,7 +50,7 @@ adb install apk/RoboLaunch.xprize.1.0.0.apk
 
 echo 'Installing RoboTutor...'  >&2
 ### TODO replace with most recent version
-adb install apk/robotutor.release.2.7.4.1.apk
+adb install apk/robotutor.release.2.7.7.1.apk
 
 echo 'Installing RoboTransfer...'  >&2
 adb install apk/RoboTransfer-xprize.apk
