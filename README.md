@@ -63,10 +63,14 @@ Only follow these if you have not been given a prepared version of the code for 
 	* CodeDrop2_ReadingStories.1.1.0.zip
 	* CodeDrop2_Tutors.1.1.0.zip
 
-5. Go to the [RTAsset_Publisher](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RTAsset_Publisher) repository and go to the **XPrize Pre-Installation Process** section. Follow steps 1-4 to generate the "RTAsset_Audio_SW_Set1.1.1.0.zip" file. Transfer this file into the [assets](assets) folder.
-6. After the listed APKs and assets have been added, your [apk](apk) and [assets](assets) directories should look like this:
-![expected directory contents](img/expected_dirs.png)
-7. Once these files are present, continue below to push assets and install APKs.
+
+5. Go to the [RTAsset_Publisher](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RTAsset_Publisher) repository and go to the **XPrize Pre-Installation Process** section. Follow steps 1-4 to generate the "RTAsset_Audio_SW_Set1.1.1.0.zip" file. Transfer this file into the [assets](assets) folder.
+
+6. After the listed APKs and assets have been added, your [apk](apk) and [assets](assets) directories should look like this:
+
+![expected directory contents](img/expected_dirs.png)
+
+7. Once these files are present, continue below to push assets and install APKs.
 
 ### Setting up adb on Windows
 Follow steps [here](https://www.xda-developers.com/install-adb-windows-macos-linux/)
@@ -78,8 +82,4 @@ Follow steps [here](https://www.xda-developers.com/install-adb-windows-macos-lin
 
 
 ![build process](img/build_process.png)
-
-## **Usage**
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />The RoboTutor Global Learning Xprize Submission</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
