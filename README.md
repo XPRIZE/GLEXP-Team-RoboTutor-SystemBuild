@@ -2,6 +2,8 @@
 
 ## RoboTutor XPrize System Build
 
+Welcome to RoboTutor: this version was uploaded to XPrize 11/20/2018. For subsequent changes, see (https://github.com/RoboTutorLLC/RoboTutor)[https://github.com/RoboTutorLLC/RoboTutor].
+
 ### Steps to install:
 
 1. Start from a fresh install of Android 7.1.1 (NMF26H)
