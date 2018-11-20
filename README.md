@@ -17,19 +17,13 @@ Welcome to RoboTutor: this version was uploaded to XPrize 11/20/2018. For subseq
 ### Instructions for Testing
 0. After installation, you should not be able to pull down the top menu, press the home button, or press the recent button. 
 1. While on home screen, tap anywhere on screen.
-2. Tap on logo to start FaceLogin.
-3. Logging in to FaceLogin
-	1. Tap red record button to record a video of yourself.
-	2. Tap green smiley to approve.
-	3. Tap on your photo in the upper left hand corner
-	4. Tap on the green smiley to approve. This should launch RoboTutor
-4. If your first time installing, wait for the assets to unzip (there will be a yellow bar on a gray screen).
-5. Select any activity area.
-6. There may be a demo video that starts before the tutor begins. Wait for this to finish.
-7. Exit the tutor by tapping the arrow in the top left corner.
-8. On the screen with the faces, tap on the door in the lower right to Exit. This should bring you back to FaceLogin.
-9. Repeat steps 3.3 to 8 two or three times. This will generate some log files to be transferred.
-10. Check the FTP server for files in the *remote* folder titled "RoboTutor......json".
+2. If your first time installing, wait for the assets to unzip (there will be a yellow bar on a gray screen).
+3. Select any activity area.
+4. There may be a demo video that starts before the tutor begins. Wait for this to finish.
+5. Exit the tutor by tapping the arrow in the top left corner.
+6. On the home screen, tap on the door in the lower right to Exit. This should bring you back to FaceLogin.
+7. Repeat steps 3.3 to 8 two or three times. This will generate some log files to be transferred.
+8. Check the FTP server for files in the *remote* folder titled "RoboTutor......json".
 
 **Resetting the tablet should bring you back to the RoboTutor home screen**
 
@@ -63,14 +57,11 @@ Only follow these if you have not been given a prepared version of the code for 
 	* CodeDrop2_ReadingStories.1.1.0.zip
 	* CodeDrop2_Tutors.1.1.0.zip
 
-
-5. Go to the [RTAsset_Publisher](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RTAsset_Publisher) repository and go to the **XPrize Pre-Installation Process** section. Follow steps 1-4 to generate the "RTAsset_Audio_SW_Set1.1.1.0.zip" file. Transfer this file into the [assets](assets) folder.
-
-6. After the listed APKs and assets have been added, your [apk](apk) and [assets](assets) directories should look like this:
+5. After the listed APKs and assets have been added, your [apk](apk) and [assets](assets) directories should look like this:
 
 ![expected directory contents](img/expected_dirs.png)
 
-7. Once these files are present, continue below to push assets and install APKs.
+6. Once these files are present, continue below to push assets and install APKs.
 
 ### Setting up adb on Windows
 Follow steps [here](https://www.xda-developers.com/install-adb-windows-macos-linux/)
