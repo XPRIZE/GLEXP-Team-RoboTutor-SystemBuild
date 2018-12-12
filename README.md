@@ -2,7 +2,7 @@
 
 ## RoboTutor XPrize System Build
 
-Welcome to RoboTutor: this version was uploaded to XPRIZE on 11/20/2018. For subsequent changes, see (https://github.com/RoboTutorLLC/XPrizeSystemBuild)[https://github.com/RoboTutorLLC/XPrizeSystemBuild].
+This version was uploaded to XPRIZE on 11/20/2018. For subsequent changes, see (https://github.com/RoboTutorLLC/XPrizeSystemBuild)[https://github.com/RoboTutorLLC/XPrizeSystemBuild].
 
 ### Steps to install:
 
