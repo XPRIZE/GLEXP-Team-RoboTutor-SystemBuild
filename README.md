@@ -2,7 +2,7 @@
 
 ## RoboTutor XPrize System Build
 
-This version was uploaded to XPRIZE on 11/20/2018. For subsequent changes, see (https://github.com/RoboTutorLLC/XPrizeSystemBuild)[https://github.com/RoboTutorLLC/XPrizeSystemBuild].
+This version was uploaded to XPRIZE on 11/20/2018. For subsequent changes, see [RoboTutorLLC/XPrizeSystemBuild](https://github.com/RoboTutorLLC/XPrizeSystemBuild).
 
 ### Preparing Installation
 
@@ -35,8 +35,8 @@ Follow steps [here](https://www.xda-developers.com/install-adb-windows-macos-lin
 2.	Navigate to Settings > System > About tablet and tap on build number 7 times to enable Developer options (Note: Steps might vary for different Android versions). From Developer options enable USB debugging
 3.	Enable installing apps from unknown sources from Settings.
 4.	Connect your Android device to PC via USB. Allow USB debugging on your tablet when prompted.
-5.	Run xprize.bat (or xprize.sh on Mac/Linux). Note that this will put your device into kiosk mode, so that no other system services can be accessed (Note: To unpin your screen press and hold back + recent buttons on your tablet. Once a toast appears saying that screen is unpinned, you can use home button to navigate to your tablet’s home screen).
-6.	Wait until the script finishes, then start RoboTutor by tapping on the screen.
+5.	Run xprize.bat (or xprize.sh on Mac/Linux).
+6.	Wait until the script finishes, then open the RoboTutor application from your launcher.
 7.	When RoboTutor starts up, it will unzip all the asset files.
 
 ### Uninstalling the application
