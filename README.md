@@ -7,18 +7,11 @@ This version was uploaded to XPRIZE on 11/20/2018. For subsequent changes, see [
 ### Preparing Installation
 
 1. Go to the [RoboTutor](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RoboTutor) repository and go to the **Building RoboTutor** section. Follow steps 1-7 to generate the APK robotutor.release.2.7.7.1.apk, and then copy it into the [apk](apk) folder.
+3. Go to the [RTAsset_Publisher](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RTAsset_Publisher) repository and go to the *Zipping Assets* section. Execute the vatch or shell files for English version (suffixed EN) and then copy it into the [assets](assets) folder.
 2. Go to the [CodeDrop2_Assets](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-CodeDrop2-Assets) repostiory and go to the **XPrize Pre-Installation process** section. Follow steps 1-4 to generate the following zip files. Transfer these files to the [assets](assets) folder.
-	* CodeDrop1_LitAudio.1.1.0.zip
-	* CodeDrop1_LitStories.1.1.0.zip
-	* CodeDrop1_NumberStories.1.1.0.zip
-	* CodeDrop1_Songs.1.1.0.zip
 	* CodeDrop2_DemoVideos.1.1.0.zip
 	* CodeDrop2_Icons.1.1.0.zip
-	* CodeDrop2_MathStories.1.1.0.zip
 	* CodeDrop2_Original.1.1.0.zip
-	* CodeDrop2_PuncStories.1.1.0.zip
-	* CodeDrop2_ReadingStories.1.1.0.zip
-	* CodeDrop2_Tutors.1.1.0.zip
 3. After the listed APKs and assets have been added, your [apk](apk) and [assets](assets) directories should look like this:
 
 ![expected directory contents](img/expected_dirs.png)
