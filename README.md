@@ -4,6 +4,10 @@
 
 This version was uploaded to XPRIZE on 11/20/2018. For subsequent changes, see [RoboTutorLLC/XPrizeSystemBuild](https://github.com/RoboTutorLLC/XPrizeSystemBuild).
 
+### Setting up adb on Windows
+
+Set up adb on your system using the steps mentioned [here](https://www.xda-developers.com/install-adb-windows-macos-linux/)
+
 ### Preparing Installation
 
 1. Go to the [RoboTutor](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RoboTutor) repository and go to the **Building RoboTutor** section. Follow steps 1-7 to generate the APK robotutor.release.2.7.7.1.apk, and then copy it into the [apk](apk) folder.
@@ -17,10 +21,6 @@ This version was uploaded to XPRIZE on 11/20/2018. For subsequent changes, see [
 ![expected directory contents](img/expected_dirs.png)
 
 4. Once these files are present, continue below to push assets and install APK.
-
-### Setting up adb on Windows
-
-Follow steps [here](https://www.xda-developers.com/install-adb-windows-macos-linux/)
 
 ### Steps to install:
 
