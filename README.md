@@ -11,7 +11,7 @@ Set up adb on your system using the steps mentioned [here](https://www.xda-devel
 ### Preparing Installation
 
 1. Go to the [RoboTutor](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RoboTutor) repository and go to the **Building RoboTutor** section. Follow steps 1-7 to generate the APK robotutor.release.2.7.7.1.apk, and then copy it into the [apk](apk) folder.
-3. Go to the [RTAsset_Publisher](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RTAsset_Publisher) repository and go to the *Setup and Configuration* section. Execute the batch or shell files for English version (suffixed EN) and then copy it into the [assets](assets) folder.
+3. Go to the [RTAsset_Publisher](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-RTAsset_Publisher) repository and go to the **Setup and Configuration** section. Execute the batch or shell files for English version (suffixed EN) and then copy it into the [assets](assets) folder.
 2. Go to the [CodeDrop2_Assets](https://github.com/XPRIZE/GLEXP-Team-RoboTutor-CodeDrop2-Assets) repostiory and go to the **XPrize Pre-Installation process** section. Follow steps 1-4 to generate the following zip files. Transfer these files to the [assets](assets) folder.
 	* CodeDrop2_DemoVideos.1.1.0.zip
 	* CodeDrop2_Icons.1.1.0.zip
